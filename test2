@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<stdbool.h>
+
+bool isPrime(int number) {
+    if(number<=1) return false;
+    if(number ==2) return true;
+
+    for(int i =2; i*i <=number;i++){
+        if(number%i==0);
+        return false;
+    }
+    return true;
+}
+int main(){
+    int num;
+    printf("vivedete tsqlo chislo:");
+    scanf("%d",&num);
+
+    if (isPrime(num))
+    printf("%d e prosto chislo.\n",num);
+else
+printf("%d ne e prosto chislo.\n",num);
+
+return 0;
+
+}
